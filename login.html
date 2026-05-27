@@ -23,6 +23,24 @@
             <button style="width:96%; padding:18px; font-size:22px; background:#004b96; color:white; border:0; border-radius:6px;">
                 Đăng nhập
             <button onclick="login()"
+style="width:96%; padding:18px; font-size:18px;
+background:#004b96; color:white; border:0; border-radius:6px;">
+Đăng nhập
+</button>
+
+<script>
+function login() {
+    var user = document.querySelector('input[type="text"]').value;
+    var pass = document.querySelector('input[type="password"]').value;
+
+    if (user === "admin" && pass === "123456") {
+        alert("Đăng nhập thành công!");
+        window.location.href = "index.html";
+    } else {
+        alert("Sai tên đăng nhập hoặc mật khẩu!");
+    }
+}
+</script>
 style="width:96%; padding:18px; font-size:22px;
 background:#004b96; color:white; border:0; border-radius:6px;">
 Đăng nhập
