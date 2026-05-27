@@ -16,12 +16,26 @@
 
     <p>Hệ thống chỉ nhận ảnh JPG/PNG và kiểm tra dung lượng trước khi gửi.</p>
 
-    <button style="padding:12px 30px; background:#004b96; color:white; border:0; border-radius:6px;">
-        Gửi bài dự thi
-    </button>
+    <button onclick="guiBai()"
+style="padding:12px 30px;
+background:#004b96;
+color:white;
+border:0;
+border-radius:6px;">
+
+Gửi bài dự thi
+
+</button>
 
     <br><br>
     <a href="index.html">Quay lại trang chủ</a>
 
-</body>
+<script>
+function guiBai() {
+
+    alert("Bài thi đã được gửi thành công!");
+
+    window.location.href = "index.html";
+}
+</script>
 </html>
