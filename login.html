@@ -44,6 +44,20 @@ border:1px solid #ccc;
 border-radius:6px;">
 
 <input type="password"
+    <button onclick="login()"
+style="width:96%;
+padding:18px;
+font-size:22px;
+background:#004b96;
+color:white;
+border:0;
+border-radius:6px;
+margin-top:20px;
+cursor:pointer;">
+
+Đăng nhập
+
+</button>
 placeholder="Mật khẩu"
 style="width:90%;
 padding:18px;
@@ -90,9 +104,9 @@ background:#004b96;
 color:white;
 padding:20px;">
 
-<b>TRƯỜNG ĐẠI HỌC TRÀ VINH</b><br>
+<b>GIÁO VIÊN HƯỚNG DẪN</b><br>
 
-<i>Mang đến cơ hội học tập chất lượng cho cộng đồng</i>
+<i>TS ĐOÀN PHƯỚC MIỀN</i>
 
 </div>
 
@@ -107,7 +121,7 @@ function login() {
     var pass =
     document.querySelector('input[type="password"]').value;
 
-    if(user === "admin" && pass === "123456") {
+    if(user === "admin" && pass === "12345678") {
 
         alert("Đăng nhập thành công!");
 
