@@ -70,7 +70,7 @@
 
     <br /><br />
 
-    <img src="Bieutuong.png" width="260" />
+    <img src="./Bieutuong.png" width="260" />
 
     
 
