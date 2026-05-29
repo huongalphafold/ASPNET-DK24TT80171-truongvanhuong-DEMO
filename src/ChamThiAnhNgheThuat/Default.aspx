@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" %>
+<%@ Page Language="C#" %>
 
 <!DOCTYPE html>
 <html>
@@ -30,7 +30,7 @@
             background: #0b4f9c;
             color: white;
             padding: 18px;
-            margin-top: 25px;
+            margin-top: 40px;
             font-size: 20px;
             font-weight: bold;
             border-radius: 8px;
@@ -53,6 +53,10 @@
             margin: 10px;
             box-shadow: 0 5px #003b70;
         }
+
+        .btn:hover {
+            background: #004b96;
+        }
     </style>
 </head>
 
@@ -70,9 +74,7 @@
 
     <br /><br />
 
-    <img src="./Bieutuong.png" width="260" />
-
-    
+    <img src="Bieutuong.png" width="260" />
 
     <div class="menu">
         <a href="DangNhap.aspx"><button type="button" class="btn">Đăng nhập</button></a>
@@ -83,8 +85,9 @@
         <a href="TheLe.aspx"><button type="button" class="btn">Thể lệ</button></a>
     </div>
 
-</body>
     <div class="banner">
-    🎨 Website chấm thi ảnh nghệ thuật trực tuyến | Sinh viên: Trương Văn Hướng | Lớp: DK24TT80171 | GVHD: TS. ĐOÀN PHƯỚC MIỀN
-</div>
+        🎨 Website chấm thi ảnh nghệ thuật trực tuyến | Sinh viên: Trương Văn Hướng | Lớp: DK24TT80171 | GVHD: TS. ĐOÀN PHƯỚC MIỀN
+    </div>
+
+</body>
 </html>
