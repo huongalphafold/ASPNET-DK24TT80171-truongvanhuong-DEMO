@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" %>
+<%@ Page Language="C#" %>
 
 <!DOCTYPE html>
 <html>
@@ -70,7 +70,7 @@
 
     <br /><br />
 
-    <img src="Bieutuong.png" width="260" />
+    <img src="./Bieutuong.png" width="260" />
 
     
 
