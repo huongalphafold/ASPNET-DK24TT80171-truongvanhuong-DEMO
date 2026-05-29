@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
     <title>Chấm điểm Rubrics</title>
@@ -8,11 +9,17 @@
 
 <h1>CHẤM ĐIỂM TÁC PHẨM</h1>
 
-<p>Mã dự thi: DT001</p>
+<p><b>Mã dự thi: DT001</b></p>
 
-<img src="https://cdn-icons-png.flaticon.com/512/2919/2919592.png" width="220">
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800"
+width="450"
+style="border-radius:10px; box-shadow:0 0 10px #999;">
 
 <h2>Tác phẩm: Bình minh quê hương</h2>
+
+<p>
+Giám khảo xem ảnh, nhập điểm theo Rubrics và ghi nhận xét cho tác phẩm.
+</p>
 
 <table border="1" style="margin:auto; border-collapse:collapse; width:700px;">
 
@@ -50,23 +57,51 @@
 
 <br>
 
-<textarea id="nhanxet" placeholder="Nhận xét giám khảo"
-style="width:400px; height:120px;"></textarea>
+<textarea id="nhanxet"
+placeholder="Nhận xét giám khảo"
+style="width:450px; height:120px;"></textarea>
 
 <br><br>
 
-<button onclick="luuDiem()" style="padding:12px 30px; background:#004b96; color:white; border:0; border-radius:6px; cursor:pointer;">
+<button onclick="luuDiem()"
+style="
+padding:12px 30px;
+background:#004b96;
+color:white;
+border:0;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+">
+
 Lưu điểm
+
 </button>
 
 <h3 id="ketqua"></h3>
 
 <br>
 
-<a href="index.html">Quay lại trang chủ</a>
+<a href="index.html">
+<button style="
+padding:10px 20px;
+background:#0d5cab;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+">
+
+← Quay lại trang chủ
+
+</button>
+</a>
 
 <script>
+
 function luuDiem() {
+
     var bocuc = Number(document.getElementById("bocuc").value);
     var anhsang = Number(document.getElementById("anhsang").value);
     var ytuong = Number(document.getElementById("ytuong").value);
@@ -77,18 +112,18 @@ function luuDiem() {
         return;
     }
 
-    if (bocuc < 1 || bocuc > 10 || anhsang < 1 || anhsang > 10 || ytuong < 1 || ytuong > 10 || kythuat < 1 || kythuat > 10) {
-        alert("Điểm phải nằm trong khoảng từ 1 đến 10!");
-        return;
-    }
-
-    var tongDiem = (bocuc * 0.25) + (anhsang * 0.25) + (ytuong * 0.25) + (kythuat * 0.25);
+    var tongDiem =
+        (bocuc * 0.25) +
+        (anhsang * 0.25) +
+        (ytuong * 0.25) +
+        (kythuat * 0.25);
 
     document.getElementById("ketqua").innerHTML =
         "Điểm trung bình: " + tongDiem.toFixed(2);
 
     alert("Điểm đã được lưu thành công!");
 }
+
 </script>
 
 </body>
