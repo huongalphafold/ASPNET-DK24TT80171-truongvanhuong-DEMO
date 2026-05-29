@@ -1,22 +1,18 @@
-# ASPNET-DK24TT80171-truongvanhuong-DEMO
+# WEBSITE CHẤM THI ẢNH NGHỆ THUẬT TRỰC TUYẾN
 
-## Đề tài
-Xây dựng hệ thống website chấm thi ảnh nghệ thuật trực tuyến
+Sinh viên: Trương Văn Hướng
+Lớp: DK24TT80171
+GVHD: TS. ĐOÀN PHƯỚC MIỀN
 
-## Sinh viên thực hiện
-- Họ tên: Trương Văn Hướng
-- MSSV: 170124888
-- Lớp: DK24TT80171
-
-## Giảng viên hướng dẫn
-TS. Đoàn Phước Miền
-
-## Mô tả
-Website hỗ trợ tổ chức cuộc thi ảnh nghệ thuật trực tuyến, cho phép người dự thi gửi ảnh, ban giám khảo chấm điểm và quản trị viên quản lý cuộc thi.
+## Chức năng
+- Đăng nhập
+- Đăng ký
+- Nộp ảnh
+- Chấm điểm
+- Xem kết quả
+- Thể lệ cuộc thi
 
 ## Công nghệ sử dụng
-- ASP.NET
+- ASP.NET Web Forms
 - C#
-- SQL Server
 - HTML/CSS
-- Bootstrap
