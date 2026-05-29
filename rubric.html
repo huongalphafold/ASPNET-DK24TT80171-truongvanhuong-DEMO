@@ -10,13 +10,11 @@
 
 <p>Mã dự thi: DT001</p>
 
-<img src="https://cdn-icons-png.flaticon.com/512/2919/2919592.png"
-width="220">
+<img src="https://cdn-icons-png.flaticon.com/512/2919/2919592.png" width="220">
 
 <h2>Tác phẩm: Bình minh quê hương</h2>
 
-<table border="1"
-style="margin:auto; border-collapse:collapse; width:700px;">
+<table border="1" style="margin:auto; border-collapse:collapse; width:700px;">
 
 <tr style="background:#004b96; color:white;">
     <th>Tiêu chí</th>
@@ -27,49 +25,71 @@ style="margin:auto; border-collapse:collapse; width:700px;">
 <tr>
     <td>Bố cục</td>
     <td>25%</td>
-    <td><input type="number" min="1" max="10"></td>
+    <td><input id="bocuc" type="number" min="1" max="10"></td>
 </tr>
 
 <tr>
     <td>Ánh sáng</td>
     <td>25%</td>
-    <td><input type="number" min="1" max="10"></td>
+    <td><input id="anhsang" type="number" min="1" max="10"></td>
 </tr>
 
 <tr>
     <td>Ý tưởng</td>
     <td>25%</td>
-    <td><input type="number" min="1" max="10"></td>
+    <td><input id="ytuong" type="number" min="1" max="10"></td>
 </tr>
 
 <tr>
     <td>Kỹ thuật</td>
     <td>25%</td>
-    <td><input type="number" min="1" max="10"></td>
+    <td><input id="kythuat" type="number" min="1" max="10"></td>
 </tr>
 
 </table>
 
 <br>
 
-<textarea placeholder="Nhận xét giám khảo"
+<textarea id="nhanxet" placeholder="Nhận xét giám khảo"
 style="width:400px; height:120px;"></textarea>
 
 <br><br>
 
-<button style="padding:12px 30px;
-background:#004b96;
-color:white;
-border:0;
-border-radius:6px;">
-
+<button onclick="luuDiem()" style="padding:12px 30px; background:#004b96; color:white; border:0; border-radius:6px; cursor:pointer;">
 Lưu điểm
-
 </button>
 
-<br><br>
+<h3 id="ketqua"></h3>
+
+<br>
 
 <a href="index.html">Quay lại trang chủ</a>
+
+<script>
+function luuDiem() {
+    var bocuc = Number(document.getElementById("bocuc").value);
+    var anhsang = Number(document.getElementById("anhsang").value);
+    var ytuong = Number(document.getElementById("ytuong").value);
+    var kythuat = Number(document.getElementById("kythuat").value);
+
+    if (!bocuc || !anhsang || !ytuong || !kythuat) {
+        alert("Vui lòng nhập đầy đủ điểm cho 4 tiêu chí!");
+        return;
+    }
+
+    if (bocuc < 1 || bocuc > 10 || anhsang < 1 || anhsang > 10 || ytuong < 1 || ytuong > 10 || kythuat < 1 || kythuat > 10) {
+        alert("Điểm phải nằm trong khoảng từ 1 đến 10!");
+        return;
+    }
+
+    var tongDiem = (bocuc * 0.25) + (anhsang * 0.25) + (ytuong * 0.25) + (kythuat * 0.25);
+
+    document.getElementById("ketqua").innerHTML =
+        "Điểm trung bình: " + tongDiem.toFixed(2);
+
+    alert("Điểm đã được lưu thành công!");
+}
+</script>
 
 </body>
 </html>
