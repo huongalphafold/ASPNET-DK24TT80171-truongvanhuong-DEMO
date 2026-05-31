@@ -1,82 +1,86 @@
-# Website Chấm Thi Ảnh Nghệ Thuật Trực Tuyến
+# WEBSITE CHẤM THI ẢNH NGHỆ THUẬT TRỰC TUYẾN
 
-## Giới thiệu
+## Thông tin đề tài
 
-Đây là đồ án môn Chuyên đề ASP.NET với đề tài:
+- Sinh viên thực hiện: Trương Văn Hướng
+- MSSV: 170124888
+- Lớp: DK24TT80171
+- Giảng viên hướng dẫn: TS. ĐOÀN PHƯỚC MIỀN
 
-**Xây dựng hệ thống Website Chấm Thi Ảnh Nghệ Thuật Trực Tuyến**
+## Mô tả đề tài
 
-Hệ thống cho phép thí sinh đăng ký tài khoản, nộp ảnh dự thi, ban giám khảo thực hiện chấm điểm và công bố kết quả trực tuyến.
+Website chấm thi ảnh nghệ thuật trực tuyến được xây dựng bằng ASP.NET Web Forms.
 
----
+Chức năng chính:
 
-## Thông tin sinh viên
-
-* Họ và tên: Trương Văn Hướng
-* MSSV: 170124888
-* Lớp: DK24TT80171
-* Giảng viên hướng dẫn: TS. Đoàn Phước Miền
-
----
+- Đăng nhập hệ thống
+- Đăng ký tài khoản
+- Nộp ảnh dự thi
+- Chấm điểm tác phẩm
+- Xem kết quả
+- Xem thể lệ cuộc thi
 
 ## Công nghệ sử dụng
 
-* ASP.NET Web Forms
-* C#
-* SQL Server Express
-* HTML5
-* CSS3
-* Visual Studio 2022
-
----
-
-## Chức năng chính
-
-### Thí sinh
-
-* Đăng ký tài khoản
-* Đăng nhập hệ thống
-* Nộp ảnh dự thi
-* Xem kết quả
-
-### Ban giám khảo
-
-* Xem danh sách tác phẩm
-* Chấm điểm tác phẩm
-* Nhận xét tác phẩm
-
-### Quản trị
-
-* Quản lý dữ liệu cuộc thi
-* Công bố kết quả
-
----
+- ASP.NET Web Forms
+- C#
+- SQL Server
+- HTML/CSS
+- Visual Studio 2022
 
 ## Cơ sở dữ liệu
 
-Database:
+Database: ChamThiAnhNgheThuat
 
-```text
-ChamThiAnhNgheThuat
-```
+Bảng dữ liệu:
 
-Các bảng chính:
+- ThiSinh
+- TacPham
+- ChamDiem
 
-* ThiSinh
-* TacPham
-* ChamDiem
+File cơ sở dữ liệu:
 
-File database:
+- setup/database.sql
+- setup/ChamThiAnhNgheThuat.bak
 
-```text
-setup/database.sql
-```
+## Hướng dẫn chạy chương trình
 
-Backup database:
+1. Mở Visual Studio 2022
+2. Mở file ChamThiAnhNgheThuat.sln
+3. Restore Database từ file .bak hoặc chạy database.sql
+4. Nhấn F5 để chạy chương trình
 
-```text
-setup/ChamThiAnhNgheThuat.bak
-```
+---
+
+# HÌNH ẢNH GIAO DIỆN
+
+## 1. Trang chủ
+
+![Trang chủ](images/1.%20Trang%20chủ.jpg)
+
+## 2. Trang đăng nhập
+
+![Trang đăng nhập](images/2.%20Trang%20Đăng%20nhập.jpg)
+
+## 3. Trang đăng ký
+
+![Trang đăng ký](images/3.%20Trang%20Đăng%20ký.jpg)
+
+## 4. Trang nộp ảnh
+
+![Trang nộp ảnh](images/4.%20Trang%20Nộp%20ảnh.jpg)
+
+## 5. Trang chấm điểm
+
+![Trang chấm điểm](images/5.%20Trang%20Chấm%20điểm.jpg)
+
+## 6. Trang kết quả
+
+![Trang kết quả](images/6.%20Trang%20Kết%20quả.jpg)
+
+## 7. Trang thể lệ
+
+![Trang thể lệ](images/7.%20Trang%20Thể%20lệ.jpg)
 
 ---
 
@@ -85,23 +89,20 @@ setup/ChamThiAnhNgheThuat.bak
 ```text
 ASPNET-DK24TT80171-truongvanhuong-DEMO
 │
+├── images
 ├── setup
-│   ├── HuongDanChay.txt
-│   ├── database.sql
-│   └── ChamThiAnhNgheThuat.bak
-│
 ├── src
-│   └── ChamThiAnhNgheThuat
-│
 ├── thesis
-│   └── Do_An_ASPNET_Truong_Van_Huong_Hoan_Chinh_De_Nop.pdf
-│
 ├── README.md
 └── .gitignore
 ```
 
+## Repository
+
+GitHub Repository:
+
+https://github.com/huongalphafold/ASPNET-DK24TT80171-truongvanhuong-DEMO
+
 ---
 
-## Hướng dẫn chạy chương trình
-
-1. Cài đặt Visual Studio 2022
+© Trương Văn Hướng - DK24TT80171
