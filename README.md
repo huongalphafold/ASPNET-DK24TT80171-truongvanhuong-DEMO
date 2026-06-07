@@ -30,13 +30,42 @@ Chức năng chính:
 
 ## Cơ sở dữ liệu
 
-Database: ChamThiAnhNgheThuat
+Cơ sở dữ liệu: ChamThiAnhDB
 
-Bảng dữ liệu:
+1. Bảng TaiKhoan
+- Id
+- TenDangNhap
+- MatKhau
+- VaiTro
 
-- ThiSinh
-- TacPham
-- ChamDiem
+Dùng để lưu tài khoản đăng nhập hệ thống.
+
+2. Bảng ThiSinh
+- Id
+- HoTen
+- Email
+- SoDienThoai
+- NgayDangKy
+
+Dùng để lưu thông tin thí sinh đăng ký tham gia cuộc thi.
+
+3. Bảng BaiDuThi
+- Id
+- TenTacPham
+- TacGia
+- DuongDanAnh
+- NgayNop
+
+Dùng để lưu thông tin tác phẩm dự thi.
+
+4. Bảng ChamDiem
+- Id
+- BaiDuThiId
+- Diem
+- NhanXet
+- NgayCham
+
+Dùng để lưu điểm số và nhận xét của giám khảo.
 
 File cơ sở dữ liệu:
 
