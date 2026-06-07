@@ -45,10 +45,16 @@ File cơ sở dữ liệu:
 
 ## Hướng dẫn chạy chương trình
 
-1. Mở Visual Studio 2022
-2. Mở file ChamThiAnhNgheThuat.sln
-3. Restore Database từ file .bak hoặc chạy database.sql
-4. Nhấn F5 để chạy chương trình
+Yêu cầu:
+- Visual Studio 2022
+- SQL Server Express
+- SQL Server Management Studio
+
+Các bước chạy:
+1. Restore database bằng file ChamThiAnhDB.sql
+2. Mở ChamThiAnhNgheThuat.sln
+3. Kiểm tra Connection String trong Web.config
+4. Nhấn F5 để chạy
 
 ---
 
