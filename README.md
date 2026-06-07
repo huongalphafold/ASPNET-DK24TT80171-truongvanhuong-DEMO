@@ -89,12 +89,24 @@ File cơ sở dữ liệu:
 ```text
 ASPNET-DK24TT80171-truongvanhuong-DEMO
 │
-├── images
-├── setup
-├── src
-├── thesis
-├── README.md
-└── .gitignore
+├── images/                    (Hình ảnh giao diện)
+├── setup/                     (Hướng dẫn cài đặt)
+├── src/ChamThiAnhNgheThuat/   (Mã nguồn ASP.NET)
+├── thesis/                    (Báo cáo DOCX/PDF)
+│
+├── Default.aspx
+├── DangNhap.aspx
+├── DangKy.aspx
+├── NopAnh.aspx
+├── ChamDiem.aspx
+├── KetQua.aspx
+├── TheLe.aspx
+│
+├── ChamThiAnhDB.sql
+├── Web.config
+├── ChamThiAnhNgheThuat.sln
+├── ChamThiAnhNgheThuat.csproj
+└── README.md
 ```
 
 ## Repository
